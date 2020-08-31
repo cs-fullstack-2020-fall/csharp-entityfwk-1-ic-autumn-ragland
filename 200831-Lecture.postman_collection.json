@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "ee23cd52-dd08-4af3-8080-f8f6b1f959d2",
+		"name": "200831-Lecture",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Invitees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/HouseParty",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"HouseParty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Invitee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Russell",
+							"type": "text"
+						},
+						{
+							"key": "isAttending",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "numberOfParties",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "66",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/HouseParty/AddInvitee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"HouseParty",
+						"AddInvitee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Invitee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Amy",
+							"type": "text"
+						},
+						{
+							"key": "isAttending",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "numberOfParties",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "62",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/HouseParty/UpdateInvitee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"HouseParty",
+						"UpdateInvitee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:5001/HouseParty/DeleteInvitee",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"HouseParty",
+						"DeleteInvitee"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

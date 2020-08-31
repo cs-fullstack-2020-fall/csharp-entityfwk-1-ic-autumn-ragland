@@ -1,5 +1,13 @@
 # csharp-entityfwk-1-ic
 Introduction to the Entity Framework
+### Set Up Steps
+- Create mvc application
+- Create controller with index method and test in postman
+- Add packages
+- Create model
+- Create db context model with controller to extend bdContext base class controller
+- add connection string to `appsettings.json`
+- add dbcontext to `startup.cs`
 
 ### Exercise 1
 Create an MVC application called `EFIntroductionMVC` using the `-o` option
